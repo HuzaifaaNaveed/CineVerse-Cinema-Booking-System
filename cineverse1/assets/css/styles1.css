@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;  
+    color: #f1f1f1;  
+}
+
+header {
+    background-color: #333; 
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #444; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-image {
+    width: 150px;
+    height: auto;
+    margin-left: 80px; 
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 30px;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 30px;  
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Roboto';
+}
+
+header nav ul li a:hover {
+    color: #ddd;
+}
+
+
+.movie-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.movie-photo {
+    flex: 1;
+    max-width: 400px;
+}
+
+.movie-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.movie-info {
+    flex: 1;
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+}
+
+.movie-info h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.movie-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.movie-info .genre,
+.movie-info .release-date,
+.movie-info .duration,
+.movie-info .intro {
+    margin-bottom: 15px;
+}
+
+.movie-info .trailer-link {
+    font-size: 16px;
+    color: #e74c3c;
+}
+
+.movie-info .trailer-link a {
+    color: #e74c3c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.movie-info .trailer-link a:hover {
+    color: #c0392b;
+}
+
+.book-now-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.book-now-btn:hover {
+    background-color: #c0392b;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .movie-details-container {
+        flex-direction: column;  
+        gap: 20px;
+    }
+
+    .movie-photo,
+    .movie-info {
+        flex: none;  
+        width: 100%;
+    }
+
+    .movie-info {
+        text-align: center; 
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 100px;
+    }
+
+    .movie-info h2 {
+        font-size: 28px;
+    }
+
+    .movie-info p {
+        font-size: 16px;
+    }
+
+    .movie-info .trailer-link a {
+        font-size: 14px;
+    }
+
+    .movie-info .book-now-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

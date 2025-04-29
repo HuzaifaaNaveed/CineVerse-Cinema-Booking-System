@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;  
+    color: #f1f1f1;  
+}
+
+header {
+    background-color: #333;  
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #444;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-image {
+    width: 150px;
+    height: auto;
+    margin-left: 80px; 
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;  
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    color: #ddd;
+}
+
+.book-now-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.book-now-container h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #f1f1f1;
+}
+
+.showtime-cards {
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: center;   
+    gap: 20px;  
+    padding: 20px;
+}
+
+.showtime-card {
+    background-color: #1e1e1e;
+    width: 280px;  
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #f1f1f1;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.showtime-card:hover {
+    transform: scale(1.05);
+}
+
+.showtime-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.showtime-time {
+    color: #f1f1f1;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.showtime-body {
+    margin-bottom: 20px;
+}
+
+.theater-name {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.location {
+    font-size: 16px;
+    color: #999;
+}
+
+.show-date {
+    font-size: 16px;
+    color: #bbb;
+    margin-top: 10px;
+}
+
+.showtime-footer {
+    text-align: center;
+}
+
+.book-seats-btn {
+    background-color: #f00; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.book-seats-btn:hover {
+    background-color: #c0392b;  
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 100px;
+    }
+
+    .showtime-cards {
+        justify-content: center;
+    }
+
+    .showtime-card {
+        width: 220px;  
+    }
+}

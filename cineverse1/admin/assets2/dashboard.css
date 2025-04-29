@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #8b0000, #000000); 
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: white; 
+}
+
+.bars {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bar {
+    background-color: #c0392b;
+    padding: 12px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.bar:hover {
+    background-color: #7e050f; 
+}
+
+a[href="logout.php"] {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f00; 
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+a[href="logout.php"]:hover {
+    background-color: #c0392b; 
+    transform: scale(1.05); 
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    ul li a {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    a[href="logout.php"] {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
